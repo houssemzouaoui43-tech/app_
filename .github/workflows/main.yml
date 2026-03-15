@@ -14,7 +14,10 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./gradlew bundleRelease
+        run: |
+          cd barternext-android-project
+          chmod +x gradlew
+          ./gradlew bundleRelease
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
