@@ -1,0 +1,18 @@
+{
+  "appId": "com.barternext.app",
+  "appName": "BarterNext",
+  "webDir": "build",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "AdMob": {
+      "appIdAndroid": "ca-app-pub-4158428587635293~2420456184",
+      "requestTrackingAuthorization": true,
+      "testingDevices": [],
+      "initializeForTesting": false
+    }
+  },
+  "android": {
+    "allowMixedContent": true,
+    "backgroundColor": "#f8fafc"
+  }
+}
