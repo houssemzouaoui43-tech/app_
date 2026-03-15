@@ -13,7 +13,7 @@ jobs:
           cache: gradle
       - name: Build with Gradle
         run: |
-          cd android/barternext-android-project
+          cd /android/barternext-android-project
           chmod +x gradlew
           ./gradlew bundleRelease
       - name: Upload Artifact
