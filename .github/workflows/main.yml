@@ -11,13 +11,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: gradle
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
       - name: Build with Gradle
         run: |
           cd barternext-android-project
           chmod +x gradlew
-          barternext-android-project/android/gradlew bundleRelease
+          ./gradlew bundleRelease
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
