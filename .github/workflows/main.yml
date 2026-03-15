@@ -15,7 +15,7 @@ jobs:
         run: |
           cd barternext-android-project
           chmod +x gradlew
-          ./gradlew bundleRelease
+          ./android/gradlew bundleRelease
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
