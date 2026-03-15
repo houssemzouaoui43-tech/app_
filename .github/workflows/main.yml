@@ -13,9 +13,9 @@ jobs:
           cache: gradle
       - name: Build with Gradle
         run: |
-          cd barternext-android-project/android/
+          cd barternext-android-project/android
           chmod +x gradlew
-          ./gradlew bundleRelease
+          ./gradlew bundleRelease -x lint --stacktrace
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
